@@ -1,0 +1,96 @@
+# 📄 System Requirements – Delivery Station OS
+
+**Version:** Phase 1  
+**Prepared by:** [Your Name]  
+**Date:** June 18, 2025
+
+---
+
+## 1. System Overview
+
+Delivery Station OS is a logistics platform that connects freelance couriers with third-party delivery services (e.g., Jahez, Mrsool) through a smart dispatching engine, admin dashboard, and mobile app.
+
+The platform supports:
+- Real-time dispatching with AI fallback
+- Admin-level operational control
+- Full integration with external delivery services
+- Mobile interface for couriers
+- Smart financial tracking and campaign automation
+
+---
+
+## 2. User Roles and Permissions
+
+| Role            | Permissions                                                                 |
+|------------------|------------------------------------------------------------------------------|
+| **Courier**       | Receive, accept, and complete orders; view performance and balance          |
+| **Supervisor**    | Monitor courier status, assign orders, view emergencies                     |
+| **Admin**         | Manage users, pricing, dispatch logic, campaigns, system-wide settings      |
+| **Client Partner**| Send orders via API, view delivery status, receive performance reports       |
+
+---
+
+## 3. Core Modules
+
+### 3.1 Courier Mobile App
+- Login/Signup
+- Order List and Details
+- Delivery Confirmation
+- Notifications (FCM)
+- Performance Summary
+- Language: Arabic + English
+
+### 3.2 Admin Web Dashboard
+- Real-time KPI Dashboard
+- Courier Monitoring
+- Order Assignment
+- Promotion Management
+- Campaign A/B Testing
+- Price Simulator
+- Virtual Courier View (Fallback)
+
+### 3.3 Backend API
+- Authentication (JWT)
+- Order Management (create, assign, update)
+- AI Rule Engine (dispatching decisions)
+- Webhook Listener (Jahez / Mrsool)
+- Admin Settings & Access Control
+
+### 3.4 System Intelligence & Automation
+- Smart Dispatch Engine (AI-driven)
+- Virtual Courier Logic for fallback
+- Financial Funding Tracker for campaigns
+- Price Forecasting Simulation
+- Campaign A/B Monitoring Engine
+
+---
+
+## 4. Technology Stack (Planned)
+
+| Component       | Technology            |
+|------------------|------------------------|
+| Mobile App       | Flutter (iOS/Android)  |
+| Admin Panel      | Next.js                |
+| Backend API      | Node.js + Express      |
+| Database         | MongoDB Atlas          |
+| Notifications    | Firebase Cloud Messaging |
+| Hosting          | DigitalOcean / AWS     |
+
+---
+
+## 5. Integrations
+
+- ✅ Jahez Webhook (Incoming Orders)
+- ✅ Mrsool Webhook (Incoming Orders)
+- ✅ Firebase for Real-Time Updates
+- ✅ Redis + BullMQ for Dispatch Queues
+
+---
+
+## 6. Constraints & Notes
+
+- Arabic support required across all platforms (RTL layout)
+- System must handle fallback if no couriers available
+- Admin panel to include both real-time and simulation tools
+
+---
